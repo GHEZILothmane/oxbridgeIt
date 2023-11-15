@@ -1,0 +1,21 @@
+// Core variables and mixins
+@import "base/variables.scss";
+@import "base/mixins.scss";
+@import "base/page.scss";
+// Components 
+@import "components/navbar.scss";
+@import "components/backtop.scss";
+//layout 
+@import "layout/header.scss";
+@import "layout/hero.scss";
+@import "layout/contact.scss";
+@import "layout/about.scss";
+@import "layout/partners.scss";
+@import "layout/services.scss";
+@import "layout/subservices/network.scss";
+@import "layout/subservices/security.scss";
+@import "layout/subservices/website.scss";
+@import "layout/subservices/virtualization.scss";
+@import "layout/subservices/compsol.scss";
+@import "layout/training.scss";
+@import "layout/footer.scss";

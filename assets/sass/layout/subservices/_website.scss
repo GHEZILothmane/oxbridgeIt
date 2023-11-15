@@ -1,0 +1,103 @@
+/*--------------------------------------------------------------
+# Info Box
+--------------------------------------------------------------*/
+
+#website{
+    .section-headline{
+        & > h2 {
+                margin-bottom: 50px;
+        }
+    }
+}
+#website.info-box{
+    .img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 250px;
+        margin-bottom: 40px;
+        border-radius: 12px;
+    }
+    .accordion-list {
+        padding: 40px 100px 60px 100px;
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+        li + li {
+            margin-top: 15px;
+        }
+        li {
+            cursor: pointer;
+            padding: 20px;
+            background: #f2f5f4;
+            border-radius: 5px;
+            h4 {
+                display: block;
+                position: relative;
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                padding-right: 30px;
+                outline: none;
+                transition: ease-in-out 0.3s;
+                &:hover{
+                    color: $primary;
+                }
+                span {
+                    color: $primary;
+                    font-weight: 600;
+                    font-size: 18px;
+                    padding-right: 10px;
+                }
+                i {
+                    font-size: 24px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+            p {
+                margin-bottom: 0;
+                padding: 10px 0 0 0;
+            }
+            .icon-show {
+                display: none;
+            }
+        }
+        h4.collapsed {
+            color: $gray-900;
+            &:hover{
+                color: $primary;
+            }
+            .icon-show {
+                display: inline-block;
+            }
+            .icon-close {
+                display: none;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+.info-box{
+    .content,.accordion-list {
+        padding-left: 0;
+        padding-right: 0;
+        }
+    }
+} 
+@media (max-width: 992px) {
+    .info-box {
+        .content {
+            padding-top: 30px;
+        }
+        .accordion-list {
+            padding-bottom: 30px;
+        }
+    }
+}

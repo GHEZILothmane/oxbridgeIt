@@ -1,0 +1,150 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 130%;
+        height: 95%;
+        background: linear-gradient(to right, #{fade-out($black, .35)} 0%, #{fade-out($black, .2)} 100%), url("../../assets/img/hero-bg.jpg") center no-repeat;
+        z-index: 0;
+        border-radius: 0 0 50% 50%;
+        transform: translateX(-50%) rotate(0deg);
+        @include sm{
+          left: 40%;
+          top: 0;
+          width: 200%;
+          height: 95%;
+          border-radius: 0 0 50% 50%;
+          transform: translateX(-50%) rotate(0deg);
+        }
+        @include md{
+          width: 180%;
+          height: 95%;
+          border-radius: 0 0 50% 50%;
+          transform: translateX(-50%) rotate(0deg);
+        }
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 130%;
+        height: 96%;
+        background: $primary;
+        z-index: 0;
+        border-radius: 0 0 50% 50%;
+        transform: translateX(-50%) translateY(18px) rotate(2deg);
+        @include sm {
+          left: 50%;
+          top: 0;
+          width: 200%;
+          height: 94%;
+          border-radius: 0 0 50% 50%;
+          transform: translateX(-50%) translateY(20px) rotate(4deg);
+        }
+        @include md {
+          top: 0;
+          width: 180%;
+          height: 94%;
+          border-radius: 0 0 50% 50%;
+          transform: translateX(-50%) translateY(20px) rotate(4deg);
+        }
+    }
+    .carousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    h2 {
+        color: $white;
+        margin-bottom: 30px;
+        font-size: 48px;
+        font-weight: 700;
+        @include md{
+          font-size: 28px;
+        }
+    }
+    p {
+        width: 80%;
+        font-size: 18px;
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+        margin: 0 auto 30px auto;
+        color: $white;
+    }
+    .carousel-control-prev, .carousel-control-next{
+      width: 10%;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+      background: none;
+      font-size: 48px;
+      line-height: 1;
+      width: auto;
+      height: auto;
+    }
+    .btn-get-started {
+      font-size: 36px;
+      display: inline-block;
+      padding: 4px 0;
+      border-radius: 50px;
+      transition: 0.3s ease-in-out;
+      margin: 10px;
+      width: 64px;
+      height: 64px;
+      text-align: center;
+      border: 2px solid $white;
+      color: $white;
+      &:hover{
+        padding-top: 8px;
+        background: rgba(255, 255, 255, 0.15);
+      }
+    }
+    .btn-check-more {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 12px 32px;
+      border-radius: 50px;
+      transition: 0.5s;
+      line-height: 1;
+      margin: 10px;
+      color: $white;
+      -webkit-animation-delay: 0.8s;
+      animation-delay: 0.8s;
+      border: 2px solid $primary;
+      &:hover{
+        background: $primary;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+}
+
+
+@media (min-width: 1024px) {
+  #hero{
+    p {
+      width: 60%;
+    }
+    .carousel-control-prev,.carousel-control-next{
+      width: 5%;
+    }
+  }
+} 

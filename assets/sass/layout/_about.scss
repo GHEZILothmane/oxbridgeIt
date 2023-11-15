@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+.about {
+    padding: 60px 0;
+    padding-bottom: 30px;
+    .container {
+        box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+    } 
+    .video-box {
+        img {
+            padding: 80px 0 0;
+        }
+    }
+    .section-title {
+        p {
+            text-align: left;
+            font-style: italic;
+            color: $gray-800;
+        }
+    }
+    .about-content {
+        padding: 40px;
+    }
+    .icon-box {
+        & + .icon-box {
+            margin-top: 40px;
+        }
+        .icon {
+            float: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            background: #f1f7fb;
+            // border-radius: 6px;
+            border-radius: 50%;
+            transition: 0.5s;
+            i {
+                color: $primary;
+                font-size: 32px;
+            }         
+        }
+        .description {
+            margin-left: 95px;
+            line-height: 24px;
+            font-size: 14px;
+        }
+        &:hover .icon {
+            background: $primary;
+            i {
+                color: #fff;
+            }
+        }
+    }  
+}

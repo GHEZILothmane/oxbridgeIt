@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# Virtulization
+--------------------------------------------------------------*/
+#virtualization{
+    .section-headline{
+        h2 {
+            margin-bottom: 40px;
+        }
+    }
+    img {
+        max-height: 280px;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 35px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            padding-bottom: 10px;
+            i {
+                font-size: 20px;
+                padding-right: 4px;
+                color: $primary;
+            }
+        }
+    }   
+}

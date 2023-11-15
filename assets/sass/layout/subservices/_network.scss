@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+#network{
+    .section-headline{
+        p {
+            margin-bottom: 50px;
+        }  
+    }
+    .sub-services-details {
+        transition: all 0.5s ease 0s;
+        padding: 40px 20px 0;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        text-align: center;
+        position: relative;  
+    }
+
+    .single-sub-services{
+        & > p {
+            color: $gray-900;
+            font-size: 14px;
+        }
+        .icon {
+            position: absolute;
+            top: -30px;
+            left: calc(50% - 36px);
+            transition: 0.2s;
+            border-radius: 50%;
+            border: 6px solid $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            width: 60px;
+            height: 60px;
+            background: $primary;
+            i {
+                color: $white;
+                font-size: 24px;
+            }
+        } 
+        &:hover {
+            .icon {
+                background: $white;
+                border: 2px solid $primary;
+                i {
+                    color: $primary;
+                }
+            }  
+        }  
+    }
+}
